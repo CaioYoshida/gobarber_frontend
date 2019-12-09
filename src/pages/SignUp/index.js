@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Form, Input } from '@rocketseat/unform';
 
 import logo from '~/assets/logo.svg';
 
@@ -10,14 +11,14 @@ export default function SignUp() {
     <>
       <img src={logo} alt="gobarber" />
 
-      <form action="">
-        <input placeholder="Entire Name" />
-        <input type="email" placeholder="Your e-mail" />
-        <input type="password" placeholder="Password" />
+      <Form>
+        <Input name="name" placeholder="Entire Name" />
+        <Input name="email" type="email" placeholder="Your e-mail" />
+        <Input name="password" type="password" placeholder="Password" />
 
         <button type="submit">Create Account</button>
-        <Link to="/">I'm already registered</Link>
-      </form>
+        <Link to="/">Im already registered</Link>
+      </Form>
     </>
   );
 }

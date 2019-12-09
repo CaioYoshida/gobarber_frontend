@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Wrapper, Content } from './styles';
+import { Wrapper, Content } from '~/pages/_layouts/auth/styles';
 
 export default function AuthLayout({ children }) {
   return (
